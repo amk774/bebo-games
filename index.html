@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BEBO GAMES — مكتبة ألعاب الكمبيوتر من الكلاسيكيات إلى الألعاب الحديثة.">
+  <title>BEBO GAMES | مكتبة ألعاب الكمبيوتر</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="BEBO GAMES">
+      <span class="brand-mark">B</span><span>BEBO<span class="brand-accent"> GAMES</span></span>
+    </a>
+    <nav>
+      <a href="#library">المكتبة</a><a href="#football">كرة القدم</a><a href="#about">عن الموقع</a>
+    </nav>
+    <a class="top-cta" href="#library">استكشف الألعاب <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> عالم ألعاب الكمبيوتر في مكان واحد</div>
+        <h1>من ذكريات زمان<br>لحد <span class="gradient-text">ألعاب النهارده.</span></h1>
+        <p>اكتشف تاريخ ألعاب الكمبيوتر، وابحث عن لعبتك المفضلة، وشوف سنة الإصدار والتصنيف ومتطلبات التشغيل.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#library">ابدأ الاستكشاف <span>←</span></a>
+          <a class="btn secondary" href="#football">قسم كرة القدم ⚽</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="gameCount">—</strong><span>إصدار كرة قدم</span></div>
+          <div><strong>2006–2026</strong><span>رحلة عبر السنين</span></div>
+          <div><strong>PC</strong><span>عالم ألعاب الكمبيوتر</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="تصميم فني مستوحى من ألعاب الكمبيوتر">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-chip chip-top">PC GAMING</div>
+        <div class="main-emblem"><span class="emblem-small">THE ULTIMATE</span><b>GAME<br>ZONE</b><span class="emblem-line"></span><span class="emblem-small">EST. 2006 — NOW</span></div>
+        <div class="floating-chip chip-bottom">LEVEL UP <b>↗</b></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="أقسام الموقع"><div>PC GAMES <i>✦</i> RETRO CLASSICS <i>✦</i> FOOTBALL GAMES <i>✦</i> GAME HISTORY <i>✦</i> PC GAMES <i>✦</i> RETRO CLASSICS <i>✦</i> FOOTBALL GAMES <i>✦</i></div></section>
+
+    <section class="section" id="library">
+      <div class="section-heading">
+        <div><div class="eyebrow">DISCOVER YOUR NEXT GAME</div><h2>مكتبة الألعاب</h2><p>دور على اللعبة أو اختار الجيل اللي بتحبه.</p></div>
+        <span class="section-index">01 / LIBRARY</span>
+      </div>
+      <div class="toolbar">
+        <label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث باسم اللعبة..." autocomplete="off"></label>
+        <select id="eraFilter" aria-label="فلترة حسب الفترة"><option value="all">كل الفترات</option><option value="classic">كلاسيكيات (قبل 2010)</option><option value="2010s">2010 – 2019</option><option value="modern">2020 – الآن</option></select>
+        <select id="genreFilter" aria-label="فلترة حسب التصنيف"><option value="all">كل التصنيفات</option><option value="football">كرة قدم</option><option value="racing">سباقات</option><option value="action">أكشن ومغامرات</option><option value="strategy">استراتيجية</option></select>
+      </div>
+      <div class="quick-filters" id="quickFilters">
+        <button class="filter-pill active" data-quick="all">الكل</button><button class="filter-pill" data-quick="football">كرة القدم</button><button class="filter-pill" data-quick="racing">سباقات</button><button class="filter-pill" data-quick="action">أكشن</button><button class="filter-pill" data-quick="strategy">استراتيجية</button>
+      </div>
+      <div class="game-grid" id="gameGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>مفيش نتائج مطابقة. جرّب كلمة بحث أو تصنيف تاني.</div>
+      <div class="library-note"><span>ⓘ</span> دي مكتبة تعريفية. روابط الحصول على الألعاب بتوجّه للمصادر الرسمية أو صفحات البحث، ومش بنستضيف ملفات ألعاب محمية بحقوق النشر.</div>
+    </section>
+
+    <section class="football-section" id="football">
+      <div class="football-bg"></div>
+      <div class="section-heading football-heading">
+        <div><div class="eyebrow">THE FOOTBALL LEGACY</div><h2>تاريخ كرة القدم على PC</h2><p>FIFA وPES من 2006 لحد الإصدارات الحديثة.</p></div>
+        <span class="section-index">02 / FOOTBALL</span>
+      </div>
+      <div class="football-tabs"><button class="series-tab active" data-series="all">كل السلاسل</button><button class="series-tab" data-series="fifa">FIFA / EA SPORTS FC</button><button class="series-tab" data-series="pes">PES / eFootball</button></div>
+      <div class="football-grid" id="footballGrid"></div>
+      <div class="football-footnote">ملاحظة: السلسلة اتغير اسمها من FIFA إلى EA SPORTS FC بدايةً من FC 24. وPES تحولت إلى eFootball، اللي بقت تعتمد على تحديثات موسمية بدل إصدار سنوي ثابت.</div>
+    </section>
+
+    <section class="feature-strip" id="about">
+      <div class="feature-icon">⌘</div><div><div class="eyebrow">MORE THAN A GAME LIST</div><h2>كل لعبة ليها حكاية.</h2><p>المشروع قابل للتطوير: نقدر نضيف صفحات تفاصيل، تقييمات، صور أغلفة مرخّصة، وقاعدة بيانات أكبر للألعاب.</p></div>
+      <a class="btn secondary" href="#library">ارجع للمكتبة ↑</a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">B</span><span>BEBO<span class="brand-accent"> GAMES</span></span></a><span>مشروع تجريبي لعشاق ألعاب الكمبيوتر.</span><span>© <span id="year"></span> BEBO GAMES</span></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <article class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+      <div class="modal-cover" id="modalCover"></div>
+      <div class="modal-content"><div class="eyebrow" id="modalEyebrow">GAME DETAILS</div><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-meta" id="modalMeta"></div><a class="btn primary" id="officialLink" target="_blank" rel="noopener">ابحث عن مصدر رسمي <span>↗</span></a><p class="modal-disclaimer">تأكد من توافق اللعبة مع جهازك ومن شروط الترخيص قبل الشراء أو التنزيل.</p></div>
+    </article>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
